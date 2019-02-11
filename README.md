@@ -37,7 +37,7 @@ Laptop
 Program parameters
 ------------------
 <pre>
-UDPSendMsg [port] ["msg"]
+UDPSendMsg [port] ["msg"]  
     port    any non-system UDP port eg. 34523 (default=9876).  
     msg     optional string which overrides the default "HELLO from <hostname>" msg.
   
