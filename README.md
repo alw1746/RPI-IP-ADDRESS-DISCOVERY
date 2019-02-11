@@ -7,7 +7,7 @@ A simple solution is to run a Java program on startup and broadcast the ip addre
 Raspberry Pi
 ------------
 
--login as pi user  
+-Login as pi user  
 -Download UDP server program UDPSendMsg.java to /home/pi and compile it.  
 
 **javac UDPSendMsg.java**
@@ -34,8 +34,8 @@ Laptop
 
 **HELLO from berry1@192.168.20.101:9876**
 
-Program parameters
-------------------
+Program options
+---------------
 <pre>
 UDPSendMsg [port] ["msg"]  
     port    any non-system UDP port eg. 34523 (default=9876).  
