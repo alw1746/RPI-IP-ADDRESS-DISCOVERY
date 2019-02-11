@@ -42,7 +42,7 @@ UDPSendMsg [port] ["msg"]
   msg     optional string which overrides the default "HELLO from <hostname>"
   
 UDPRecvMsg [port]  
-  port    any non-system UDP port eg. 34523 (default=9876). Must match UPDSendMsg's port.
+  port    any non-system UDP port eg. 34523 (default=9876). Must match UDPSendMsg's port.
 
 Run this Linux command to list current UDP ports in use:
 
