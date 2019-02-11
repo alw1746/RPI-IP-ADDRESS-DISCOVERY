@@ -14,7 +14,7 @@ javac UDPSendMsg.java
 
 -create a crontab entry for reboot event.
 
-crontab -e
+crontab -e  
 @reboot /usr/bin/java UDPSendMsg > /tmp/UDPSendMsg.log 2>&1
 
 -On a boot, the program will broadcast the UDP packet for 200secs at 5-sec interval.
@@ -37,11 +37,11 @@ HELLO from berry1@192.168.20.101:9876
 Program parameters
 ------------------
 
-UDPSendMsg [port] ["msg"]
-  port    any non-system UDP port eg. 34523 (default=9876)
+UDPSendMsg [port] ["msg"]  
+  port    any non-system UDP port eg. 34523 (default=9876)  
   msg     optional string which overrides the default "HELLO from <hostname>"
   
-UDPRecvMsg [port]
+UDPRecvMsg [port]  
   port    any non-system UDP port eg. 34523 (default=9876). Must match UPDSendMsg's port.
 
 Run this Linux command to list current UDP ports in use:
