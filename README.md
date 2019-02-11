@@ -26,11 +26,11 @@ Laptop
 
 javac UDPRecvMsg.java
 
--Run the UDP client program first before starting the RPi.
+-Run the UDP client program first before starting up the RPi.
 
 java UDPRecvMsg
 
--The UDP datagram containing the RPi information will be shown during the startup:
+-The ip address will be displayed upon reception of the UDP broadcast eg:
 
 HELLO from berry1@192.168.20.101:9876
 
