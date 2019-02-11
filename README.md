@@ -8,16 +8,16 @@ Raspberry Pi
 ------------
 
 -login as pi user  
--Download UDP server program UDPSendMsg.java and compile it.  
+-Download UDP server program UDPSendMsg.java to /home/pi and compile it.  
 
 **javac UDPSendMsg.java**
 
--create a crontab entry for reboot event.
+-create a crontab entry for reboot action.
 
 **crontab -e  
 @reboot /usr/bin/java UDPSendMsg > /tmp/UDPSendMsg.log 2>&1**
 
--On a boot, the program will broadcast the UDP packet for 200secs at 5-sec interval.
+-On startup, the program will automatically broadcast the UDP message for 200secs at 5-sec interval.
 
 Laptop
 ------
@@ -38,8 +38,8 @@ Program parameters
 ------------------
 <pre>
 UDPSendMsg [port] ["msg"]
-    port    any non-system UDP port eg. 34523 (default=9876)  
-    msg     optional string which overrides the default "HELLO from <hostname>"
+    port    any non-system UDP port eg. 34523 (default=9876).  
+    msg     optional string which overrides the default "HELLO from <hostname>" msg.
   
 UDPRecvMsg [port]
     port    any non-system UDP port eg. 34523 (default=9876). Must match UDPSendMsg's port.
