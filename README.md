@@ -43,9 +43,14 @@ UDPSendMsg [port] ["msg"]
   
 UDPRecvMsg [port]
     port    any non-system UDP port eg. 34523 (default=9876). Must match UDPSendMsg's port.
+</pre>
 
-Run this Linux command to list current UDP ports in use:
-
- netstat --udp -an
+Useful commands
+---------------
+<pre>
+ netstat --udp -an       #Linux list current UDP ports in use
+ netstat -p UDP -an      #Windows
+ ifconfig                #Linux show network interfaces and broadcast addresses
+ ipconfig /all           #Windows
 </pre>
  
