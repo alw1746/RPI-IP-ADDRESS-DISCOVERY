@@ -54,8 +54,9 @@ Useful commands
  ipconfig /all           #Windows
 </pre>
  
- Windows 10 Firewall permit inbound UDP broadcast for Java applications
-----------------------------------------------------------------------
+ Windows 10 Firewall rules
+--------------------------
+By default Windows 10 Firewall rules block the Java runtime from receiving UDP broadcasts for a network's public profile. Follow the steps below to modify the rule.  
 
 -get java runtime version on PC.
 <pre>
