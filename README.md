@@ -54,3 +54,35 @@ Useful commands
  ipconfig /all           #Windows
 </pre>
  
+ Windows 10 Firewall permit inbound UDP broadcast for Java applications
+----------------------------------------------------------------------
+
+-get java runtime version on PC.
+<pre>
+java -version
+java version "1.8.0_181"
+</pre>
+-get profile of Active network interface (private or public).
+
+**Control Panel -> Network and Sharing Center**
+
+-Check the Windows Firewall rules for connected profile.
+
+**Control Panel -> Windows Defender Firewall**
+
+**Advanced Settings -> Inbound Rules**
+
+-Look for line that corresponds to the java version, profile, action and protocol:
+<pre>
+Name                           Profile  Action  Program                                           Protocol
+Java(TM) Platform SE binary    Public   Block   C:\program files\java\jdk1.8.0_181\bin\java.exe   UDP
+</pre>
+-Change current Action from Block to Allow:
+
+**Rightclick on rule, select Properties.  
+Select Action:  Allow the connection**
+
+-Inbound UDP broadcasts are now permitted in Windows firewall for Java program testing.
+
+-Note, this will permit any Java program to receive UDP broadcasts from any source.
+
