@@ -63,7 +63,7 @@ By default Windows 10 Firewall rules block the Java runtime from receiving UDP b
 java -version
 java version "1.8.0_181"
 </pre>
--get profile of Active network interface (private or public).
+-verify profile of Active network interface (private or public).
 
 **Control Panel -> Network and Sharing Center**
 
@@ -78,7 +78,7 @@ java version "1.8.0_181"
 Name                           Profile  Action  Program                                           Protocol
 Java(TM) Platform SE binary    Public   Block   C:\program files\java\jdk1.8.0_181\bin\java.exe   UDP
 </pre>
--Change current Action from Block to Allow:
+-Change current Action from Block to Allow. If there are duplicate rules, Block will override any other Allows.
 
 **Rightclick on rule, select Properties.  
 Select Action:  Allow the connection**
